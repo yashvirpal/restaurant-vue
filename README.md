@@ -19,26 +19,13 @@ npm i vue-router@next
 	import in main.js and use in use()
 	remove template from app.vue file 
 	call router in app.vue file
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
+### Login Page
+![Login](./public/login.png)
+### Signup Page
+![Signup](./public/signup.png)
+### Home Page
+![home](./public/home.png)
+### Edit Page
+![home](./public/editUpdate.png)
 

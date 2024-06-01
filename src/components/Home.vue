@@ -62,14 +62,19 @@ export default {
             }
         },
         async restaurantList() {
+            
             let user = localStorage.getItem("user-info")
-            // console.log(user)
-            this.name = JSON.parse(user).name
-            if (!user) {
+             console.log(user)
+            
+            if (!user || user==null) {
+                
+                alert("ddd")
                 this.$router.push({
-                    name: "Signup"
+                    name: "Login"
                 })
+                return false;
             };
+            this.name = JSON.parse(user).name
             let result = await axios.get("http://localhost:3000/restaurants");
             this.restaurants = result.data;
         }
