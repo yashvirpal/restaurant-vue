@@ -9,6 +9,7 @@ vue create restaurant
 npm remove @vue/cli-plugin-eslint
 
 npm i json-server
+
 	create a db.json
 	npx json-server db.json #Path where is create and store db.json file 
 	
@@ -19,6 +20,7 @@ npm i vue-router@next
 	import in main.js and use in use()
 	remove template from app.vue file 
 	call router in app.vue file
+
 
 ### Login Page
 ![Login](./public/login.png)
