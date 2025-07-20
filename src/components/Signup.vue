@@ -24,7 +24,7 @@ export default {
     methods: {
         async signUp() {
           console.log(this.name,this.email,this.password);
-            let result= await axios.post("http://localhost:3000/users",{
+            let result= await axios.post("https://yashvirpal-restaurant.vercel.app/users",{
                name: this.name,
                email: this.email,
                password: this.password
