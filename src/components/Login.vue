@@ -24,7 +24,7 @@ export default {
     methods: {
         async logIn() {
           //console.log(this.email,this.password);
-            let result= await axios.get(`http://localhost:3000/users?email=${this.email}&password=${this.password}`
+            let result= await axios.get(`https://yashvirpal-restaurant.vercel.app/users?email=${this.email}&password=${this.password}`
               
             );
             console.log(result)
