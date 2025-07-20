@@ -56,7 +56,7 @@ export default {
     methods: {
         async deleteRestaurant(id) {
 
-            let result = await axios.delete(`http://localhost:3000/restaurants/${id}`)
+            let result = await axios.delete(`https://yashvirpal-restaurant.vercel.app/restaurants/${id}`)
             if (result.status == 200) {
                 this.restaurantList()
             }
@@ -75,7 +75,7 @@ export default {
                 return false;
             };
             this.name = JSON.parse(user).name
-            let result = await axios.get("http://localhost:3000/restaurants");
+            let result = await axios.get("https://yashvirpal-restaurant.vercel.app/restaurants");
             this.restaurants = result.data;
         }
     }
