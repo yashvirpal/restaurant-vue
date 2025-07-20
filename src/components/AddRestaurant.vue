@@ -38,7 +38,7 @@ export default {
     methods: {
         async addRestaurant() {
             //console.log(this.restaurants)
-            let result = await axios.post("http://localhost:3000/restaurants", {
+            let result = await axios.post("https://yashvirpal-restaurant.vercel.app/restaurants", {
                 name: this.restaurants.name,
                 email: this.restaurants.email,
                 phone: this.restaurants.phone,
