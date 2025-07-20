@@ -44,13 +44,13 @@ export default {
             })
         };
         //console.log(this.$route.params.id) // id define in route.js file
-        let result = await axios.get(`http://localhost:3000/restaurants/${this.$route.params.id}` );       
+        let result = await axios.get(`https://yashvirpal-restaurant.vercel.app/restaurants/${this.$route.params.id}` );       
         this.restaurants = result.data;
 
     },
     methods: {
         async updateRestaurant(){
-              let result = await axios.put(`http://localhost:3000/restaurants/${this.$route.params.id}`, {
+              let result = await axios.put(`https://yashvirpal-restaurant.vercel.app/restaurants/${this.$route.params.id}`, {
                 name: this.restaurants.name,
                 email: this.restaurants.email,
                 phone: this.restaurants.phone,
